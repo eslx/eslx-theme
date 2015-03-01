@@ -1,2 +1,2 @@
 # eslx-theme
-edx styling template
+edx styling theme, forked from stanford theme.  
