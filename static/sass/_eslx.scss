@@ -2,11 +2,44 @@
 *   Stanford Theming File
 *
 *   Contains all the theme color definitions for the Stanford Open Source MOOC Project
+* 
+*   With ESLX additions, yo
 *
 ****************************************************************************************************/
 
+//////////// random added CSS per Adam's 
+/////
+
+// peach color on footer
+.wrapper-footer {
+  background-color: #ebe2d0;
+}
+
+// fully remove navigation in course material 
+nav.course-material {
+  display: none;
+}
+
+///// these three use a hacked navigation.html to add the eslx class into the header...  otherwise its overridden
+header.global.slim.eslx h2 {
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+header.global.slim.eslx h2 .provider {
+  color: #FFFFFF;
+}
+
+header.global.slim.eslx {
+  border-bottom: 8px solid #b6a268;
+  background: #0f3549;
+}
+
+
+
+
 //-----------------
-//  Color variables (from Stanford palette unless noted)
+//  Color variables 
 //-----------------
 
 //Main Color Variables
