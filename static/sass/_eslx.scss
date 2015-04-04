@@ -20,6 +20,11 @@ nav.course-material {
   display: none;
 }
 
+// this is sprinkled in various pages to remove elements.
+.eslx-hide {
+  display: none;
+}
+
 ///// these three use a hacked navigation.html to add the eslx class into the header...  otherwise its overridden
 header.global.slim.eslx h2 {
   color: #FFFFFF;
@@ -30,12 +35,40 @@ header.global.slim.eslx h2 .provider {
   color: #FFFFFF;
 }
 
-header.global.slim.eslx {
+header.global.slim.eslx, header.global-new.eslx {
   border-bottom: 8px solid #b6a268;
   background: #0f3549;
 }
 
+// removes 'register' link on login page
+header.global-new.eslx .cta-register {
+  display: none;
+}
 
+/// fixes login text color on login page
+header.global-new.eslx .cta-login {
+  color: #FFFFFF;
+}
+
+// removes 'find courses' in dashboard page.
+header.global-new.eslx .nav-global-01 {
+  display: none;
+}
+
+// remove 'unregister' link in dashboard, and probably elsewhere!
+#dashboard-main a.unenroll {
+  display: none;
+}
+
+// removes specific links to modify password, etc.
+#dashboard-main .edit-name, #dashboard-main .edit-email, #dashboard-main #pwd_reset_button {
+  display: none;
+}
+
+// just removes the whole fricken user sidebar
+#dashboard-main .profile-sidebar {
+  display: none;
+}
 
 
 //-----------------
@@ -44,7 +77,7 @@ header.global.slim.eslx {
 
 //Main Color Variables
 $main-color: #0f3549;     // dk blue from alan
-$dark-color: #11360B;     // dk green? 
+$dark-color: #0f3549;  //  #11360B;     // dk green? 
 $light-color: #b6a268; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
 $bg-color: #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
