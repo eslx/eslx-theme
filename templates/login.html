@@ -122,10 +122,12 @@
 </%block>
 
 <section class="introduction">
-  <header>
+  <header style="height:160px">
     <h1 class="title">
-      <span class="title-super">${_("Please log in")}</span>
-      <span class="title-sub">${_("with USER: <b>guest</b> and PASSWORD: <b>guest</b>")}</span>
+      <span class="title-super">Please log in <span style="text-transform:lowercase;font-weight:300;">with</span></span>
+      <span class="title-sub">user: <b>guest</b> and password: <b>guest</b></span>
+      <span class="title-sub">(these values should already be entered 
+	   so that you can simply click 'Log In' below)</span>
     </h1>
   </header>
 </section>
@@ -159,13 +161,13 @@
 
         <ol class="list-input">
           <li class="field required text" id="field-email">
-            <label for="email">${_('E-mail')}</label>
+            <label for="email">${_('User')}</label>
             <input class="" id="email" type="email" name="email" value="guest" placeholder="${_('guest')}" required aria-required="true" aria-described-by="email-tip" />
-            <span class="tip tip-input eslx-hide" id="email-tip">${_("This is the e-mail address you used to register with {platform}").format(platform=platform_name)}</span>
+            <span class="eslx-hide tip tip-input" id="email-tip" style="display:none;">${_("This is the e-mail address you used to register with {platform}").format(platform=platform_name)}</span>
           </li>
           <li class="field required password" id="field-password">
             <label for="password">${_('Password')}</label>
-            <input id="password" type="password" name="password" value="guest" required aria-required="true" />
+            <input id="password" type="input" name="password" value="guest" required aria-required="true" />
             <span class="tip tip-input">
               <a href="#forgot-password-modal" rel="leanModal" class="pwd-reset action action-forgotpw eslx-hide" id="forgot-password-link" role="button" aria-haspopup="true">${_('Forgot password?')}</a>
             </span>
